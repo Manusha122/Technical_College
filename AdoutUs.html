@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/NaviStytleSheet.css">
+<div class="topnav" id="myTopnav">
+  <img  src="imagers/logo.png" width="680" height="50" alt="" class="left" />
+  <a href="ContactUs.html"> Contact</a>
+  <a href="AdoutUs.html">About Us</a>
+  <a href="Gallery.html">Gallery</a>
+  <div class="dropdown">
+    <button class="dropbtn">Staff 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Staff.html">Academic Staff</a>
+      <a href="NonStaff.html">Non-academic Staff</a>
+    </div>
+  </div> 
+  <a href="Home.html">Home</a>
+</head>
+
+<style>
+ 
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 200px; 
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+	
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+</style>
+	
+<body>
+<div class="about-section">
+  <h1>Tcehnical College Kalutara</h1>
+  <h1>About Us</h1>
+</div>
+<hr>
+<br>
+<meta name="slid show" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/SlidShowSheet.css">
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="imagers/cc.png" width="1500" height="600" alt="first slide"/>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+ <img src="imagers/sw.jpg" width="1500" height="600" alt=""/> 
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="imagers/sw3.png" width="1500" height="600" alt=""/>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+	
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+	
+<hr>	
+<div class="content">
+  <h2>Principal Message :</h2>
+  <p>With profound gratitude I thank you for visiting Technical colleges' website Kalutara. We are here to serve and enrich the youth community of Kalutara and surrounding areas. This institute was established in  courses and now it has expended into including diplomas with continuous updating. I promise to ensure that you receive an enriching new technical and technological education experience that will equip you with the working skills that you needed to attain your technical & vocational training which is appropriate for the demand of local as well as global job market. If you find anything interest in please stop by and we would be happy to serve you. Again I thank you for taking the time to visit Technical college Kalutara, where you come first.</p>
+  <p>Thank you</p>
+</div>
+<hr>
+<br>
+
+<h2> We Have A Friendly & Familiar TEC For You</h2>
+<p>Welcome to Technical College,Kalutara part of the largest, the most diverse, and one of the most affordable technical systems in the country. We are about student success in education and in life. We offer courses with a focus on providing the broad foundational skills needed in all fields — such as thinking critically and constructively, identifying and solving problems, and communicating well — as well as selective, high-quality programmes.</p>
+<br>	
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Vision</h2>
+    <p>“To be the excellent & pioneer vocational & technical provider of professionals in the central province”</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Mision</h2>
+    <p>“To produce competent professionals to suit the global market through technical education & training”</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>Quality Policy</h2>
+    <p>“Dedicate to delight the customers through the continuous improvement of the quality management system”</p>
+  </div>
+</div>	
+<br>	
+<link rel="stylesheet" href="css/StaffStytleSheet.css">
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="imagers/A1.jpeg" width="300" height="300">
+      <div class="container">
+        <h2>Principal</h2>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="imagers/A2.jpeg" width="300" height="300">
+      <div class="container">
+        <h2>Instructor(English)(HOD)</h2>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="imagers/A1.jpeg" width="300" height="300">
+      <div class="container">
+        <h2>Public Management Assistant</h2>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<link rel="stylesheet" href="css/FooterStyleSheet.css">
+<header>
+<h2>Technical College - Kalutara</h2>
+</header>
+<section>
+  <nav>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="AdoutUs.html">About Us</a></li>
+      <li><a href="ContactUs.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <article>
+    <h1>Technical College</h1>
+    <p>To be the excellent & pioneer vocational & technical provider of professionals in the central province.</p>
+  </article>
+</section>
+<footer>
+  <p>© 2021 Academics All Rights Reserved.  </p>
+</footer>
+
+
+</body>
+</html>

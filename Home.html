@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	
+<!--Navigation Bar-->
+<link rel="stylesheet" href="css/NaviStytleSheet.css">
+<div class="topnav" id="myTopnav">
+  <img  src="imagers/logo.png" width="680" height="50" alt="" class="center" />
+  <a href="ContactUs.html"> Contact</a>
+  <a href="AdoutUs.html">About Us</a>
+  <a href="Gallery.html">Gallery</a>
+  <div class="dropdown">
+    <button class="dropbtn">Staff 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Staff.html">Academic Staff</a>
+      <a href="NonStaff.html">Non-academic Staff</a>
+    </div>
+  </div> 
+  <a href="Home.html">Home</a>
+<br>
+	
+<!--	Slid Show-->
+<meta name="slid show" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/SlidShowSheet.css">
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="imagers/cc.png" width="1500" height="600" alt="first slide"/>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+ <img src="imagers/sw.jpg" width="1500" height="600" alt=""/> 
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="imagers/sw3.png" width="1500" height="600" alt=""/>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+	
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<br><html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+<div align="center">
+  <h1>Most Popular Courses</h1>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>ICT Diploma</h2>
+      <div><img src="imagers/1.jpg" width="1000" height="400" alt=""/></div>
+      <p>To become an ICT expert.</p>
+    </div>
+    <div class="card">
+      <h2>Quantity Surveying</h2>
+      <div><img src="imagers/5.jpg" width="1000" height="400" alt=""/></div>
+      <p>To become a QS expert.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Industrial Electrician</h2>
+      <div><img src="imagers/6.jpg" width="400" height="200" alt=""/></div>
+      <p>To become an Industrial Electrician.</p>
+    </div>
+     <div class="card">
+      <h2>Automobile</h2>
+      <div><img src="imagers/3.jpg" width="400" height="200" alt=""/></div>
+      <p>To become an automobile engineer.</p>
+    </div>
+    <div class="card">
+		<h3>Draughtsman</h3>
+		<div><img src="imagers/4.jpg" width="400" height="200" alt=""/></div>
+        <p>To become a Draughtsman.</p>
+    </div>
+  </div>
+</div>
+<br>
+
+<!--Footer-->
+<link rel="stylesheet" href="css/FooterStyleSheet.css">
+<header>
+<h2>Technical College - Kalutara</h2>
+</header>
+<section>
+  <nav>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="AdoutUs.html">About Us</a></li>
+      <li><a href="ContactUs.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <article>
+    <h1>Technical College</h1>
+    <p>To be the excellent & pioneer vocational & technical provider of professionals in the central province.</p>
+  </article>
+</section>
+<footer>
+  <p>© 2021 Academics All Rights Reserved.  </p>
+</footer>
+	
+</body>
+</html>
+
+	
